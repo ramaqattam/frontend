@@ -25,7 +25,7 @@ const Footer = () => {
             <li className="hover:underline cursor-pointer">Privacy Policy</li>
           </ul>
         </div>
-
+    
         {/* Right Footer */}
         <div className="flex-1 min-w-[200px]">
           <h3 className="text-lg font-bold mb-6">GET IN TOUCH</h3>
