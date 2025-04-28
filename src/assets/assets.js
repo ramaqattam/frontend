@@ -13,8 +13,6 @@ import verified_icon from './verified_icon.svg'
 import arrow_icon from './arrow_icon.svg'
 import info_icon from './info_icon.svg'
 import upload_icon from './upload_icon.png'
-import stripe_logo from './stripe_logo.png'
-import razorpay_logo from './razorpay_logo.png'
 import doc1 from './doc1.png'
 import doc2 from './doc2.png'
 import doc3 from './doc3.png'
@@ -53,9 +51,7 @@ export const assets = {
     menu_icon,
     cross_icon,
     dropdown_icon,
-    upload_icon,
-    stripe_logo,
-    razorpay_logo
+    upload_icon
 }
 
 export const specialityData = [
@@ -88,212 +84,197 @@ export const specialityData = [
 export const doctors = [
     {
         _id: 'doc1',
-        name: 'Dr. Richard James',
+        name: 'Dr. Ahmad Al-Zoubi',
         image: doc1,
         speciality: 'General physician',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Dr. Ahmad Al-Zoubi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Zoubi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'King Abdullah II Street',
+            line2: 'Amman Governorate, Jordan'
         }
     },
     {
         _id: 'doc2',
-        name: 'Dr. Emily Larson',
+        name: 'Dr. Sarah Jaber',
         image: doc2,
         speciality: 'Gynecologist',
         degree: 'MBBS',
         experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        about: 'Dr. Sarah Jaber has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Jaber has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'University Street',
+            line2: 'Irbid Governorate, Jordan'
         }
     },
     {
         _id: 'doc3',
-        name: 'Dr. Sarah Patel',
+        name: 'Dr. Mohammad Al-Shdeifat',
         image: doc3,
         speciality: 'Dermatologist',
         degree: 'MBBS',
         experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        about: 'Dr. Mohammad Al-Shdeifat has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Shdeifat has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Wasfi Al-Tal Street',
+            line2: 'Mafraq Governorate, Jordan'
         }
     },
     {
         _id: 'doc4',
-        name: 'Dr. Christopher Lee',
+        name: 'Dr. Mazen Al-Tarawneh',
         image: doc4,
         speciality: 'Pediatricians',
         degree: 'MBBS',
         experience: '2 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 40,
+        about: 'Dr. Mazen Al-Tarawneh has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Tarawneh has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '47th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Downtown Area',
+            line2: 'Karak Governorate, Jordan'
         }
     },
     {
         _id: 'doc5',
-        name: 'Dr. Jennifer Garcia',
+        name: 'Dr. Nour Al-Rawabdeh',
         image: doc5,
         speciality: 'Neurologist',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Dr. Nour Al-Rawabdeh has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Rawabdeh has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'King Talal Street',
+            line2: 'Zarqa Governorate, Jordan'
         }
     },
     {
         _id: 'doc6',
-        name: 'Dr. Andrew Williams',
+        name: 'Dr. Aseel Al-Majali',
         image: doc6,
         speciality: 'Neurologist',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Dr. Aseel Al-Majali has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Majali has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Jerusalem Street',
+            line2: 'Ma\'an Governorate, Jordan'
         }
     },
     {
         _id: 'doc7',
-        name: 'Dr. Christopher Davis',
+        name: 'Dr. Maria Khory',
         image: doc7,
         speciality: 'General physician',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Dr. Maria Khory has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Khory has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Independence Street',
+            line2: 'Balqa Governorate, Jordan'
         }
     },
     {
         _id: 'doc8',
-        name: 'Dr. Timothy White',
+        name: 'Dr. Omar Alhaj',
         image: doc8,
         speciality: 'Gynecologist',
         degree: 'MBBS',
         experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        about: 'Dr. Omar Alhaj has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Alhaj has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Queen Rania Street',
+            line2: 'Ajloun Governorate, Jordan'
         }
     },
     {
         _id: 'doc9',
-        name: 'Dr. Ava Mitchell',
+        name: 'Dr. Lina Mansour',
         image: doc9,
         speciality: 'Dermatologist',
         degree: 'MBBS',
         experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        about: 'Dr. Lina Mansour has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Mansour has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Salt Street',
+            line2: 'Jerash Governorate, Jordan'
         }
     },
     {
         _id: 'doc10',
-        name: 'Dr. Jeffrey King',
+        name: 'Dr. Sara Haddad',
         image: doc10,
         speciality: 'Pediatricians',
         degree: 'MBBS',
         experience: '2 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 40,
+        about: 'Dr. Sara Haddad has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Haddad has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '47th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Palestine Street',
+            line2: 'Madaba Governorate, Jordan'
         }
     },
     {
         _id: 'doc11',
-        name: 'Dr. Zoe Kelly',
+        name: 'Dr. Rami Al-Qeisi',
         image: doc11,
         speciality: 'Neurologist',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Dr. Rami Al-Qeisi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Qeisi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Jordan Street',
+            line2: 'Tafilah Governorate, Jordan'
         }
     },
     {
         _id: 'doc12',
-        name: 'Dr. Patrick Harris',
+        name: 'Dr. Hani Al-Momani',
         image: doc12,
         speciality: 'Neurologist',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Dr. Hani Al-Momani has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Momani has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Mecca Street',
+            line2: 'Aqaba Governorate, Jordan'
         }
     },
     {
         _id: 'doc13',
-        name: 'Dr. Chloe Evans',
+        name: 'Dr. Dana Al-Kurdi',
         image: doc13,
         speciality: 'General physician',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Dr. Dana Al-Kurdi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Kurdi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Prince Hassan Street',
+            line2: 'Amman Governorate, Jordan'
         }
     },
     {
         _id: 'doc14',
-        name: 'Dr. Ryan Martinez',
+        name: 'Dr. Zaid Al-Omari',
         image: doc14,
         speciality: 'Gynecologist',
         degree: 'MBBS',
         experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        about: 'Dr. Zaid Al-Omari has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Omari has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Medina Munawara Street',
+            line2: 'Irbid Governorate, Jordan'
         }
     },
     {
         _id: 'doc15',
-        name: 'Dr. Amelia Hill',
+        name: 'Dr. Rana Al-Abbadi',
         image: doc15,
         speciality: 'Dermatologist',
         degree: 'MBBS',
         experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        about: 'Dr. Rana Al-Abbadi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Abbadi has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Gardens Street',
+            line2: 'Zarqa Governorate, Jordan'
         }
     },
 ]
