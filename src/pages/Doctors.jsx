@@ -26,14 +26,15 @@ const Doctors = () => {
         'ENT Specialist', 'Pulmonologist', 'Nephrologist', 'Oncologist'
       ][index],
       image: `/api/placeholder/300/300`,
-      rating: 4.0 + (Math.random() * 1.0).toFixed(1) * 1,
       experience: 5 + Math.floor(Math.random() * 20),
-      consultationFee: 50 + Math.floor(Math.random() * 150),
       availability: Math.random() > 0.2
     }));
     
-    setDoctors(mockDoctors);
-    setFilteredDoctors(mockDoctors);
+    // Filter to only available doctors right from the start
+    const availableDoctors = mockDoctors.filter(doctor => doctor.availability);
+    
+    setDoctors(availableDoctors);
+    setFilteredDoctors(availableDoctors);
   }, []);
 
   // Intersection Observer for animation triggers
@@ -85,7 +86,7 @@ const Doctors = () => {
   // Function to get color theme based on index
   const getColor = (index) => {
     const accentIndex = index % colorTheme.accent.length;
-    return colorTheme.primary ;
+    return colorTheme.accent[accentIndex];
   };
 
   // Handle doctor selection
@@ -199,28 +200,11 @@ const Doctors = () => {
                       {doctor.speciality}
                     </div>
                     
-                    {/* Availability Badge */}
+                    {/* Available Badge */}
                     <div
-                      className={`absolute top-4 right-4 px-2 py-1 rounded-full text-xs font-medium ${
-                        doctor.availability 
-                          ? 'bg-emerald-500 text-white' 
-                          : 'bg-gray-500 text-white'
-                      }`}
+                      className="absolute top-4 right-4 px-2 py-1 rounded-full text-xs font-medium bg-emerald-500 text-white"
                     >
-                      {doctor.availability ? 'Available' : 'Unavailable'}
-                    </div>
-                    
-                    {/* Rating Badge */}
-                    <div className="absolute bottom-4 left-4 flex items-center bg-white bg-opacity-90 backdrop-blur-sm px-2 py-1 rounded-full">
-                      <svg className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                      <span className="ml-1 text-xs font-medium text-gray-800">{doctor.rating.toFixed(1)}</span>
-                    </div>
-                    
-                    {/* Price Badge */}
-                    <div className="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm px-2 py-1 rounded-full">
-                      <span className="text-xs font-medium text-gray-800">${doctor.consultationFee}</span>
+                      Available
                     </div>
                   </div>
                   
