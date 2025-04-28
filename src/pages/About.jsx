@@ -1,7 +1,7 @@
 // About.jsx
 import React, { useState, useEffect } from 'react';
-import { assets } from '../assets/assets';
 import { colorTheme } from '../components/ColorTheme';
+import {assets} from '../assets/assets';
 
 function About() {
   const [isVisible, setIsVisible] = useState({
@@ -47,47 +47,45 @@ function About() {
   // Team members data
   const teamMembers = [
     {
-      name: "Dr. Sarah Johnson",
-      role: "Founder & Chief Medical Officer",
-      image: "/api/placeholder/200/200",
-      bio: "Board-certified cardiologist with over 15 years of experience in telemedicine and healthcare innovation."
+      name: "Eng. Rama Qattam",
+      role: "Founder & Chief Executive Officer (CEO)",
+      image: assets.ceo,
+      bio: "Software engineer with a passion for digital health innovation. Founded MedEasy to transform healthcare access through modern technology and user-centered design"
     },
     {
-      name: "Michael Chen",
-      role: "Chief Technology Officer",
-      image: "/api/placeholder/200/200",
-      bio: "Former tech lead at major healthcare platforms with expertise in secure medical data systems."
+      name: "Omar Shaher",
+      role: "Chief Technology Officer (CTO)",
+      image: assets.cto,
+      bio: "Experienced software architect specializing in healthcare systems. Leads the technical development of MedEasy’s secure and user-friendly platform"
     },
     {
-      name: "Dr. Aisha Patel",
+      name: "Dr. Rama Al-Salhi",
       role: "Medical Director",
-      image: "/api/placeholder/200/200",
-      bio: "Specialist in family medicine focused on accessible healthcare and patient education."
+      image: assets.medical_director,
+      bio: "Family medicine specialist dedicated to improving patient care and education. Oversees clinical quality and healthcare partnerships at MedEasy."
     },
     {
-      name: "James Wilson",
+      name: "Hasan Shaher",
       role: "Head of Operations",
-      image: "/api/placeholder/200/200",
-      bio: "Healthcare administrator with extensive experience in optimizing patient experience and clinical workflows."
+      image: assets.operations,
+      bio: "Healthcare operations expert focused on optimizing patient journeys and clinic workflows. Ensures smooth service delivery across the MedEasy network."
     }
   ];
 
   // Company stats
   const stats = [
-    { value: "500+", label: "Doctors", icon: "👨‍⚕️" },
-    { value: "50k+", label: "Patients", icon: "👨‍👩‍👧‍👦" },
-    { value: "25+", label: "Specialties", icon: "🏥" },
+    { value: "20+", label: "Doctors", icon: "👨‍⚕️" },
+    { value: "3k+", label: "Patients", icon: "👨‍👩‍👧‍👦" },
+    { value: "10+", label: "Specialties", icon: "🏥" },
     { value: "4.9", label: "Rating", icon: "⭐" }
   ];
 
   // Timeline events
   const timelineEvents = [
-    { year: "2018", title: "Founded", description: "MedEasy was established with a mission to transform healthcare access." },
-    { year: "2019", title: "Platform Launch", description: "Launched our first platform version serving 5 medical specialties." },
-    { year: "2020", title: "Pandemic Response", description: "Rapidly scaled telehealth services to meet COVID-19 demand." },
-    { year: "2021", title: "National Expansion", description: "Expanded our doctor network nationwide with 200+ practitioners." },
-    { year: "2022", title: "Mobile App", description: "Released our mobile application for iOS and Android devices." },
-    { year: "2023", title: "AI Integration", description: "Implemented AI-assisted diagnosis support and appointment scheduling." }
+    { year: "2025", title: "Founded", description: "MedEasy was founded to revolutionize access to healthcare through smart, user-friendly technology" },
+    { year: "2025 (Mid-Year)", title: " Initial Launch", description: "Launched the first version of the MedEasy platform, offering appointment booking across core medical specialties" },
+    { year: "2026", title: "Early Growth", description: "Expanded services to include pharmacy orders, laboratory test bookings, and integrated health profiles for patients." },
+    { year: "2026 (End of Year)", title: "Mobile App Launch", description: "Released the MedEasy mobile app on iOS and Android, enabling healthcare access anywhere, anytime" },
   ];
 
   return (
@@ -242,7 +240,7 @@ function About() {
         <div className={`max-w-4xl mx-auto transition-all duration-1000 transform ${isVisible.timeline ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-12">
             <h2 className={`text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${colorTheme.primary.gradient}`}>Our Journey</h2>
-            <p className="mt-4 text-gray-600">The story of MedEasy's growth and evolution</p>
+            <p className="mt-4 text-gray-600">The story of MedEasy's beginning and vision for the future</p>
           </div>
           
           <div className="relative">

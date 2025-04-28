@@ -224,7 +224,7 @@ const Contact = () => {
                     <div className="mt-auto pt-10">
                       <p className="text-sm opacity-80 mb-3">Connect with us on social media</p>
                       <div className="flex space-x-4">
-                        {['Twitter', 'Facebook', 'Instagram', 'LinkedIn'].map((platform, index) => (
+                        {['Twitter', 'Facebook', 'Instagram', 'LinkedIn'].map((platform) => (
                           <a 
                             key={platform} 
                             href="#" 

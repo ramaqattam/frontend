@@ -35,6 +35,12 @@ import Gynecologist from './Gynecologist.svg'
 import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
 
+import ceo from './ceo.png'
+import cto from './cto.png'
+import medical_director from './medical_director.png'
+import operations from './operations.png'
+
+
 
 export const assets = {
     appointment_img,
@@ -51,7 +57,11 @@ export const assets = {
     menu_icon,
     cross_icon,
     dropdown_icon,
-    upload_icon
+    upload_icon,
+    ceo,
+    cto,
+    medical_director,
+    operations
 }
 
 export const specialityData = [
@@ -97,12 +107,12 @@ export const doctors = [
     },
     {
         _id: 'doc2',
-        name: 'Dr. Sarah Jaber',
+        name: 'Dr. Tasneem Al-shishani',
         image: doc2,
         speciality: 'Gynecologist',
         degree: 'MBBS',
         experience: '3 Years',
-        about: 'Dr. Sarah Jaber has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Jaber has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        about: 'Dr. Tasneem Al-shishani has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Jaber has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
             line1: 'University Street',
             line2: 'Irbid Governorate, Jordan'
@@ -118,7 +128,7 @@ export const doctors = [
         about: 'Dr. Mohammad Al-Shdeifat has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Shdeifat has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
             line1: 'Wasfi Al-Tal Street',
-            line2: 'Mafraq Governorate, Jordan'
+            line2: 'Amman Governorate, Jordan'
         }
     },
     {
@@ -149,12 +159,12 @@ export const doctors = [
     },
     {
         _id: 'doc6',
-        name: 'Dr. Aseel Al-Majali',
+        name: 'Dr. Hosam Al-Majali',
         image: doc6,
         speciality: 'Neurologist',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Aseel Al-Majali has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Majali has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        about: 'Dr. Hosam Al-Majali has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Al-Majali has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
             line1: 'Jerusalem Street',
             line2: 'Ma\'an Governorate, Jordan'
@@ -162,12 +172,12 @@ export const doctors = [
     },
     {
         _id: 'doc7',
-        name: 'Dr. Maria Khory',
+        name: 'Dr. Saif Khory',
         image: doc7,
         speciality: 'General physician',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Maria Khory has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Khory has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        about: 'Dr. Saif Khory has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Khory has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
             line1: 'Independence Street',
             line2: 'Balqa Governorate, Jordan'
@@ -201,12 +211,12 @@ export const doctors = [
     },
     {
         _id: 'doc10',
-        name: 'Dr. Sara Haddad',
+        name: 'Dr. Sami Haddad',
         image: doc10,
         speciality: 'Pediatricians',
         degree: 'MBBS',
         experience: '2 Years',
-        about: 'Dr. Sara Haddad has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Haddad has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        about: 'Dr. Sami Haddad has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Haddad has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         address: {
             line1: 'Palestine Street',
             line2: 'Madaba Governorate, Jordan'
