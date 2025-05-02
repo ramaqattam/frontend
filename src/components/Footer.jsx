@@ -161,7 +161,7 @@ const Footer = () => {
                       : "translateX(0)"
                     : "translateX(-20px)",
                 }}
-                onClick={() => console.log(`Navigating to ${link.path}`)}
+                onClick={() => window.location.href = link.path}
               >
                 {activeLink === link.name ? "→ " : ""}
                 {link.name}
@@ -222,6 +222,7 @@ const Footer = () => {
             >
               <button
                 className={`bg-gradient-to-r ${colorTheme.secondary.gradient} text-white px-6 py-2 rounded-md hover:shadow-lg transition-all duration-300 hover:scale-105`}
+                onClick={() => window.location.href = "/contact"}
               >
                 Contact Us
               </button>

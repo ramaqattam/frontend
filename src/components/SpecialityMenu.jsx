@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { specialityData } from '../assets/assets';
 import { colorTheme } from './ColorTheme';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const SpecialityMenu = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate hook
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -27,9 +29,8 @@ const SpecialityMenu = () => {
   
   const handleClick = (speciality, index) => {
     setActiveIndex(index);
-    scrollTo(0,0);
-    // In a real implementation, we would use navigation here
-    console.log(`Navigating to /doctors/${speciality}`);
+    // Navigate to ALL DOCTORS page with specialty as query parameter
+    navigate('/doctors', { state: { filter: speciality } });
   };
   
   // Create a dynamic background pattern for increased visual interest

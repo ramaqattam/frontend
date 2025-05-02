@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from "react";
 import { colorTheme } from "./ColorTheme";
 import { doctors } from "../assets/assets"; // ✅ استدعاء الدكاترة من ملف assets مباشرة
+import { useNavigate } from "react-router-dom"; // ✅ استيراد useNavigate للتنقل بين الصفحات
 
 const TopDoctors = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredDoc, setHoveredDoc] = useState(null);
+  const navigate = useNavigate(); // ✅ تهيئة useNavigate
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,7 +28,8 @@ const TopDoctors = () => {
   }, []);
 
   const handleDoctorClick = (id) => {
-    console.log(`Navigating to /appointment/${id}`);
+    // ✅ استخدام navigate للانتقال إلى صفحة التفاصيل
+    navigate(`/appointment/${id}`);
     window.scrollTo(0, 0);
   };
 
@@ -138,7 +141,8 @@ const TopDoctors = () => {
 
       <button
         onClick={() => {
-          console.log('Navigating to /doctors');
+          // ✅ استخدام navigate للانتقال إلى صفحة جميع الأطباء
+          navigate('/doctors');
           window.scrollTo(0, 0);
         }}
         className={`bg-gradient-to-r ${colorTheme.primary.gradient} text-white px-6 py-2 rounded-full mt-10 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 ${
