@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { colorTheme } from "../components/ColorTheme";
 import { doctors as doctorsData } from "../assets/assets"; // ✅ استدعاء الأطباء الحقيقيين
+import { useNavigate } from "react-router-dom";
+
 
 const Doctors = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,6 +10,7 @@ const Doctors = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredDoctors, setFilteredDoctors] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const navigate = useNavigate();
 
   const doctorsPerPage = 10; // 🔥 كم دكتور بالصفحة
 
@@ -72,8 +75,10 @@ const Doctors = () => {
   };
 
   const handleDoctorSelection = (id) => {
-    console.log(`Selected doctor with ID: ${id}`);
+    navigate(`/appointment/${id}`);
+    window.scrollTo(0, 0);
   };
+  
 
   return (
     <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -171,9 +176,16 @@ const Doctors = () => {
                   <div className="p-5">
                     <h3 className="font-bold text-lg text-gray-900 mb-1">{doctor.name}</h3>
                     <p className="text-sm text-gray-500">{doctor.experience}</p>
-                    <button className={`w-full py-2 mt-2 rounded-lg bg-gradient-to-r ${color.gradient} text-white font-medium`}>
-                      Book Appointment
+                    <button
+                    onClick={(e) => {
+                      e.stopPropagation(); // Prevent parent card click
+                       handleDoctorSelection(doctor._id);
+                    }}
+                     className={`w-full py-2 mt-2 rounded-lg bg-gradient-to-r ${color.gradient} text-white font-medium`}
+                    >
+                     Book Appointment
                     </button>
+
                   </div>
                 </div>
               );
