@@ -4,12 +4,13 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
   const [token, setToken] = useState(true);
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
-      <img onClick={() => navigate("/")}
+      <img
+        onClick={() => navigate("/")}
         className="h-12 w-auto cursor-pointer"
         src={assets.MainLogoFinal}
         alt=""
@@ -68,6 +69,7 @@ const Navbar = () => {
             Create Account
           </button>
         )}
+       
       </div>
     </div>
   );

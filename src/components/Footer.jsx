@@ -135,7 +135,7 @@ const Footer = () => {
           }`}
           style={{ transitionDelay: "200ms" }}
         >
-          <h3 className="text-lg font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#69A688] to-[#558C6E]">
+          <h3 className="text-lg font-bold mb-6 bg-clip-text text-transparent bg-[#78C6A3]">
             COMPANY
           </h3>
           <ul className="space-y-4 text-sm">

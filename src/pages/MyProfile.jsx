@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const MyProfile = () => {
+
   const [editing, setEditing] = useState(false);
   const [profileImage, setProfileImage] = useState("/api/placeholder/150/150");
   const [userData, setUserData] = useState({
@@ -33,6 +34,8 @@ const MyProfile = () => {
   };
 
   return (
+    <div className="p-6 mb-20">
+
     <div className="max-w-2xl mx-auto p-8 bg-white rounded-2xl shadow-lg mt-12 transition-all duration-300">
       <div className="flex flex-col items-center mb-6">
         <div className="relative">
@@ -135,6 +138,7 @@ const MyProfile = () => {
           </button>
         )}
       </div>
+    </div>
     </div>
   );
 };

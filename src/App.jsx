@@ -11,7 +11,6 @@ import Appointment from './pages/Appointment'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
 import About from './pages/About'
-import { Toaster } from "react-hot-toast";
 
 
 const App = () => {

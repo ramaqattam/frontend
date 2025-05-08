@@ -167,7 +167,7 @@ const Login = () => {
       <div className={`w-full max-w-md transition-all duration-1000 transform ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           {/* Header */}
-          <div className={`bg-gradient-to-r ${colorTheme.primary.gradient} py-8 px-6 text-white relative overflow-hidden`}>
+          <div className={`bg-[#78C6A3] py-8 px-6 text-white relative overflow-hidden`}>
             <div className="absolute inset-0 overflow-hidden">
               <svg className="absolute left-0 top-0 h-full w-full" preserveAspectRatio="none" viewBox="0 0 800 400">
                 <path d="M 0 80 C 200 80 280 40 400 40 C 520 40 620 80 800 80 L 800 400 L 0 400 Z" className="text-white text-opacity-5" fill="currentColor"></path>
@@ -177,11 +177,6 @@ const Login = () => {
             
             <div className="relative">
               <div className="text-center">
-                <div className="inline-block p-2 rounded-full bg-white bg-opacity-10 backdrop-blur-sm mb-4">
-                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
-                  </svg>
-                </div>
                 <h2 className="text-3xl font-bold">Welcome Back!</h2>
                 <p className="text-white text-opacity-80 mt-2">
                   Sign in to your MedEasy account

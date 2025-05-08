@@ -2,17 +2,17 @@
 // This file contains the new creative color theme to be used across components
 
 export const colorTheme = {
-    // Primary gradient pairs
     primary: {
-      gradient: 'from-emerald-500 to-teal-400',
-      light: 'from-emerald-100 to-teal-50',
-      text: 'text-emerald-600',
-      border: 'border-emerald-300',
-      hover: 'hover:text-emerald-600',
-      background: 'bg-emerald-500',
-      fill: 'fill-emerald-500',
-      stroke: 'stroke-emerald-500'
+      gradient: 'from-[#78C6A3] to-[#78C6A3]', // solid look (no gradient shift)
+      light: 'from-[#B2E0CE] to-[#DFF4EA]',   // optional light shades (you can adjust as needed)
+      text: 'text-[#78C6A3]',
+      border: 'border-[#78C6A3]',
+      hover: 'hover:text-[#78C6A3]',
+      background: 'bg-[#78C6A3]',
+      fill: 'fill-[#78C6A3]',
+      stroke: 'stroke-[#78C6A3]'
     },
+    
     
     // Secondary gradient pairs
     secondary: {
@@ -60,3 +60,4 @@ export const colorTheme = {
       }
     ]
   };
+
