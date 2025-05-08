@@ -47,7 +47,6 @@ const Footer = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
-    { name: "Privacy Policy", path: "/privacy" },
   ];
 
   return (
@@ -136,9 +135,7 @@ const Footer = () => {
           }`}
           style={{ transitionDelay: "200ms" }}
         >
-          <h3
-            className={`text-lg font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r ${colorTheme.primary.gradient}`}
-          >
+          <h3 className="text-lg font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#69A688] to-[#558C6E]">
             COMPANY
           </h3>
           <ul className="space-y-4 text-sm">
@@ -161,7 +158,7 @@ const Footer = () => {
                       : "translateX(0)"
                     : "translateX(-20px)",
                 }}
-                onClick={() => window.location.href = link.path}
+                onClick={() => (window.location.href = link.path)}
               >
                 {activeLink === link.name ? "→ " : ""}
                 {link.name}
@@ -222,7 +219,7 @@ const Footer = () => {
             >
               <button
                 className={`bg-gradient-to-r ${colorTheme.secondary.gradient} text-white px-6 py-2 rounded-md hover:shadow-lg transition-all duration-300 hover:scale-105`}
-                onClick={() => window.location.href = "/contact"}
+                onClick={() => (window.location.href = "/contact")}
               >
                 Contact Us
               </button>

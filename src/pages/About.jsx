@@ -275,64 +275,55 @@ function About() {
         </div>
       </section>
       
-      {/* Testimonials Section */}
-      <section 
-        id="about-testimonials"
-        className="py-16 px-4 sm:px-6 lg:px-8"
-      >
-        <div className={`max-w-7xl mx-auto transition-all duration-1000 transform ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="text-center mb-12">
-            <h2 className={`text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${colorTheme.primary.gradient}`}>What People Say</h2>
-            <p className="mt-4 text-gray-600">Testimonials from patients and healthcare providers</p>
+          {/* Testimonials Section */}
+<section 
+  id="about-testimonials"
+  className="py-16 px-4 sm:px-6 lg:px-8"
+>
+  <div className={`max-w-7xl mx-auto transition-all duration-1000 transform ${isVisible.testimonials ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <div className="text-center mb-12">
+      <h2 className={`text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${colorTheme.primary.gradient}`}>What People Say</h2>
+      <p className="mt-4 text-gray-600">Testimonials from patients and healthcare providers</p>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {[
+        {
+          quote: "MedEasy revolutionized my practice, allowing me to connect with patients more efficiently while reducing administrative overhead.",
+          author: "Dr. Robert Chen",
+          role: "Neurologist"
+        },
+        {
+          quote: "As a busy parent, being able to book appointments instantly for my children has been lifesaving. The interface is intuitive and doctor selection is excellent.",
+          author: "Maria Garcia",
+          role: "Parent of 3"
+        },
+        {
+          quote: "The platform's specialized care options helped me find the perfect specialist for my condition when local options were limited.",
+          author: "James Wilson",
+          role: "Patient"
+        },
+      ].map((testimonial, index) => (
+        <div 
+          key={index}
+          className={`bg-white p-6 rounded-lg shadow-md border-t-4 border-${index % 2 === 0 ? 'emerald' : 'amber'}-500 hover:shadow-lg transition-all duration-300`}
+        >
+          <div className="mb-4">
+            <h4 className="font-medium text-gray-900">{testimonial.author}</h4>
+            <p className="text-sm text-gray-500">{testimonial.role}</p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "MedEasy revolutionized my practice, allowing me to connect with patients more efficiently while reducing administrative overhead.",
-                author: "Dr. Robert Chen",
-                role: "Neurologist",
-                image: "/api/placeholder/100/100"
-              },
-              {
-                quote: "As a busy parent, being able to book appointments instantly for my children has been lifesaving. The interface is intuitive and doctor selection is excellent.",
-                author: "Maria Garcia",
-                role: "Parent of 3",
-                image: "/api/placeholder/100/100"
-              },
-              {
-                quote: "The platform's specialized care options helped me find the perfect specialist for my condition when local options were limited.",
-                author: "James Wilson",
-                role: "Patient",
-                image: "/api/placeholder/100/100"
-              },
-            ].map((testimonial, index) => (
-              <div 
-                key={index}
-                className={`bg-white p-6 rounded-lg shadow-md border-t-4 border-${index % 2 === 0 ? 'emerald' : 'amber'}-500 hover:shadow-lg transition-all duration-300`}
-              >
-                <div className="flex items-center mb-4">
-                  <img 
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-medium text-gray-900">{testimonial.author}</h4>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
-                  </div>
-                </div>
-                <div className="relative">
-                  <svg className="absolute -top-3 -left-3 w-8 h-8 text-gray-200 transform -scale-x-100" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                    <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                  </svg>
-                  <p className="relative text-gray-600">{testimonial.quote}</p>
-                </div>
-              </div>
-            ))}
+          <div className="relative">
+            <svg className="absolute -top-3 -left-3 w-8 h-8 text-gray-200 transform -scale-x-100" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <p className="relative text-gray-600">{testimonial.quote}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
       
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">

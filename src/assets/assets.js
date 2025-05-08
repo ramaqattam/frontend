@@ -40,8 +40,6 @@ import cto from './cto.png'
 import medical_director from './medical_director.png'
 import operations from './operations.png'
 
-
-
 export const assets = {
     appointment_img,
     header_img,
@@ -61,7 +59,7 @@ export const assets = {
     ceo,
     cto,
     medical_director,
-    operations
+    operations,
 }
 
 export const specialityData = [
